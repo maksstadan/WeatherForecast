@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page"><a href="forecast.html">Forecast</a></div>
+    
+    <div class="box">
+      <div class="choose">
+        <select name="cityes" id="select_city">
+          <option value="kyiv">Kyiv</option>
+          <option value="lviv" >Lviv</option>
+          <option value="chernihiv">Chernihiv</option>
+        </select>
+        <label for="search">Search by name:</label>
+          <input type="text" id="search" placeholder="Dnipro">
+          <button type="submit" id="btn">Search</button>
+      </div>
+      <div class="inf">
+        <p id="city">City: Chernihiv</p>
+        <p id="country">Country: Ukraine</p> 
+        <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" id="icon">
+        <p id="temp">Temperature: 19.4°C</p>
+        <p id="temp">Wind: 18.0km/h</p>
+        <p id="cloud">Clouds: 14%</p>
+        <p id="humanity">Humidity: 58%</p>
+      </div>
+    </div>
+
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
