@@ -6,7 +6,7 @@ let API_KEY = "f1d3f5098b4148699a281517253105";
 getForecast(select_city_f.value, select_day.value);
 
 function getForecast(city, days) {
-    let url = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=${days}&aqi=no&alerts=no`;
+    let url = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=${days}&aqi=no&alerts=no`;
     fetch(url).then(async response => {
         if (response.status == 400) {
             forecast.innerHTML = null;
