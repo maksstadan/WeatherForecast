@@ -6,7 +6,7 @@ let body = document.querySelector("body");
 getWeather(select_city.value)
 
 function getWeather(city) {
-    let url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`;
+    let url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`;
     fetch(url).then(async response => {
         if (response.status == 400) {
             infDOM.innerHTML = null;
